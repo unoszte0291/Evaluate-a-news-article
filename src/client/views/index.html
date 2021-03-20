@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate a News Article with Natural Language Processing</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                <h3>Evaluate a News Article with Natural Language Processing</h3>
+            </div>
+            <div class="">
+            </div>
+        </header>
+        <div id = "app">
+            <main>
+                <section>
+                    <div class ="holder headline">
+                        Evaluating a News post form
+                    </div>
+                    <br>
+                    <input id="name" type="text" name="input" value="" placeholder="Enter a URL here">
+                    <div class="" id="submit" onsubmit="return Client.handleSubmit(event)">
+                    <input class="btn" id="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    </div>
+                    <div class="error_message" id="errorMsg"></div>
+                </section>
+                <section class="holder entry">
+                   <div class="title" id="title"><strong>Form Results:</strong></div>
+                    <div class="results" id="result"></div>
+                    <div class="subjectivity" id="subjectivity"></div>
+                    <div class="score" id="score"></div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p></p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
