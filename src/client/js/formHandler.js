@@ -31,16 +31,15 @@ async function resultMsg(res) {
     // GET function that takes the info from the server
     document.querySelector('#result').innerText = 'Confidence = ' + res.confidence + '%';
     document.querySelector('#subjectivity').innerText = res.subjectivity;
-    document.querySelector('#score').innerText = `Polarity score: ${score(
+    document.querySelector('#score_output').innerText = `Polarity score: ${resultdisplay(
         res.score_tag
       )}`;
-};
-
-function rusultdisplay(formname) {
+    }
+function resultdisplay(formname) {
     console.log(res)
     console.log(res.confidence + '%');
     console.log(res.subjectivity);
     console.log(res.score_tag);
-};
+}
 
 export { handleSubmit }

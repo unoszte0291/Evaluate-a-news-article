@@ -8,9 +8,9 @@ import './styles/base.scss'
 import './styles/form.scss'
 import './styles/header.scss'
 
-import { checkUrl } from './js/nameChecker'
+import { checkForName } from './js/nameChecker'
 
 export {
-    checkUrl,
+    checkForName,
     handleSubmit
    }
