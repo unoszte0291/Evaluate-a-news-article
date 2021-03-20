@@ -117,13 +117,14 @@ var textapi = new MeaningCloud({
 });
 ```
 ## Creating layouts and page design
-I made a webpage which is displayed the evaluatting result of a URL.
-It is designed with SCSS language.
+I made a webpage which is displayed the evaluatting result of a URL.<br
+It is designed with SCSS language.<br
 
-https://sass-lang.com/documentation
-https://developer.mozilla.org/en-US/docs/Learn/CSS
+https://sass-lang.com/documentation<br>
+https://developer.mozilla.org/en-US/docs/Learn/CSS<br
 
 ## Service workers
+```
 Three steps:
 1. In webpack.prod.js config file,
 ・Require the plugin, by appending the new plugin statement
@@ -147,7 +148,7 @@ Add this code to the bottom of your html file, just above the closing body tag.
      });
  }
 </script>
-
+```
 ## Deploying
 
 A great step to take with your finished project would be to deploy it! Unfortunately its a bit out of scope for me to explain too much about how to do that here, but checkout [Netlify](https://www.netlify.com/) or [Heroku](https://www.heroku.com/) for some really intuitive free hosting options.
