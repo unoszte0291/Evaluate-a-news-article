@@ -27,6 +27,7 @@ Remember that once you clone, you will still need to install everything:
 
 ## Webpack Loaders and Plugins
 Installed express, corse, bodyparser, and webpack with all necessary loaders and plugins.
+```
 {
   "name": "evaluate-news-project",
   "version": "1.0.0",
@@ -70,7 +71,7 @@ Installed express, corse, bodyparser, and webpack with all necessary loaders and
     "workbox-webpack-plugin": "^6.1.1"
   }
 }
-
+```
 ## Setting up the API
 
 The Aylien API is perhaps different than what you've used before. It has you install a node module to run certain commands through, it will simplify the requests we need to make from our node/express backend.
